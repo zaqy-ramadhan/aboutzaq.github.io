@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Testing Web Zaq</title>
+  <link rel="icon" href="https://i.im.ge/2022/08/09/FV0JmF.zreverse-white.png">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!-- w3.css -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+  <style>
+    .banner{
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .banner-content{
+      height: 100%;
+      display: flex;
+      color: white;
+      justify-content: center;
+      align-items: center;
+    }
+    .darken-image{
+      filter: brightness(75%);
+    }
+    .txt-shadow{
+      text-shadow: 1px 1px 2px black;
+    }
+    .centering{
+      display: flex;
+      justify-content: center;
+    }
+    .righting{
+      display: flex;
+      justify-content: right;
+    }
+    .kotak-biru{
+      width: fit-content;
+      height: fit-content;
+      padding-left: 3%;
+      padding-right: 3%;
+      border-radius: 10px;
+      background-color: #323D51;
+      display: flex;
+      justify-content: center;
+      -webkit-text-stroke: 0.8px white;
+    }
+    .kotak-sm-biru{
+      color: white;
+      width: fit-content;
+      height: 1.5vh;
+      padding-left: 3%;
+      padding-right: 3%;
+      background-color: #323D51;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-text-stroke: 1.5px #D3AC2B;
+    }
+    .bg-nav{
+      background-color: #323D51;
+    }
+    .bg-contact{
+      background: url('https://i.im.ge/2022/08/09/FVLICz.blurry2.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .black-txt-shadow{
+      text-shadow: 0 0 1em black, 0 0 0.2em black;
+    }
+  </style>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- icon -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+</head>
+<body id="page-top">
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg bg-dark sticky-top navbar-dark shadow">
+    <div class="container">
+      <img src="https://i.im.ge/2022/08/09/FV0JmF.zreverse-white.png" alt="logoku" style="width: 40px;">
+      <a class="navbar-brand text-light ms-2" href="#page-top">Demo Web Zaq</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse righting" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#portofolio">Portofolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown me-5">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Social Media
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="http://instagram.com" target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item" href="http://twitter.com" target="_blank">Twitter</a></li>
+              <li><a class="dropdown-item" href="http://linkedin.com" target="_blank">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- banner -->
+  <div id="banner" class="container-fluid banner">
+    <div class="container banner-content col-lg-6">
+      <div class="text-center">
+        <p class="fs-1 fw-semibold">
+          ZAQ'S DEMO WEBSITE
+        </p>
+        <p class="d-none d-md-block fw-normal">
+          Website demo dalam proses pengerjaan, dibuat dengan bantuan bootstrap 5 dan W3.css
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- about -->
+  <div id="about" class="container-fluid mt-5">
+    <div class="row align-items-start justify-content-center px-3">
+      <div class="col-lg-3">
+        <img id="fotoku" class=" rounded img-fluid" src="https://i.im.ge/2022/08/09/FV5XHD.fotoku.jpg" alt="ZAQ">
+      </div>
+      <div class="col-lg-4">
+        <p class="fs-1 fw-bolder" style="color: #323D51;">ABOUT ME</p>
+        <p>Mahasiswa Sistem Informasi tingkat awal yang antusias dan bermotivasi tinggi untuk mencari tantangan dan
+          pengalaman baru. Berpengalaman sejak tahun 2015 dalam desain grafis. Menguasai beberapa
+          software seperti Adobe Photoshop, Adobe Illustrator, dan Adobe Premiere Pro. Berpengalaman dalam
+          pembuatan video pendek, visual untuk media sosial, dan desain grafis, pamflet, poster, brosur, dan aset digital lain
+          untuk kebutuhan organisasi dan pribadi sebelumnya. Saat ini sedang fokus untuk memperdalam kemampuan di bidang pemrograman web, khususnya front-end.</p>
+          <div class="fs-6 fw-semibold">
+            <li>Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Rizzaqy Nasghifar Ramadhan</li>
+            <li>Usia &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 19 tahun</li>
+            <li>Pendidikan &nbsp;: D3 Sistem Informasi Universitas Airlangga 2021</li>
+          </div>
+      </div>
+    </div>
+    <!-- skill -->
+    <div class="container mt-5">
+      <p class="fs-1 fw-semibold text-center" style="color: #323D51;">MY SKILLS</p>
+      <p><span class="iconify" data-icon="simple-icons:adobephotoshop" data-width="16" data-height="16" style="margin-right:10px;"></span>Adobe Photoshop</p>
+      <div class="progress" style="margin-bottom: 15px; height: 25px;">
+        <div class="progress-bar fs-6" role="progressbar" style="width: 90%; background-color: #323D51;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Expert</div>
+      </div>
+      <p><span class="iconify" data-icon="simple-icons:adobeillustrator" data-width="16" data-height="16" style="margin-right:10px;"></span>Adobe Illustrator</p>
+      <div class="progress" style="margin-bottom: 15px; height: 25px;">
+        <div class="progress-bar fs-6" role="progressbar" style="width: 85%; background-color: #323D51;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Competent</div>
+      </div>
+      <p><span class="iconify" data-icon="simple-icons:adobepremierepro" data-width="16" data-height="16" style="margin-right:10px;"></span>Adobe Premiere Pro</p>
+      <div class="progress" style="height: 25px;">
+        <div class="progress-bar fs-6" role="progressbar" style="width: 85%; background-color: #323D51;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Competent</div>
+      </div>
+    </div>
+  </div>
+  <!-- carousel images -->
+  <div id="portofolio" class="container-fluid pt-4 mt-4">
+    <p class="fs-1 fw-bolder text-center" style="color: #323D51;">PORTOFOLIO</p>
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="darken-image">
+            <img src="https://i.im.ge/2022/08/09/FVLi6K.merged-1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="darken-image">
+            <img src="https://i.im.ge/2022/08/09/FVLLv6.merged-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="darken-image">
+            <img src="https://i.im.ge/2022/08/09/FVLhSF.merge-from-ofoct6.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container centering mt-4">
+      <button type="button" class="btn btn-dark px-3"><a class="text-light" href="porto.html">Show More</a></button>
+    </div>
+  </div>
+  <!-- contact -->
+  <div id="contact" class="container-fluid bg-contact mt-5 px-5">
+    <div class="container">
+        <h2 class="text-center fs-1 text-black-75 fw-bolder pt-4  " style="color: white;">CONTACT</h2>
+        <div class="row mt-4">
+
+          <div class="col-lg-4" style="color: white;">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt" ></i>
+                <a href="https://goo.gl/maps/i4SvdYuSh9qZ3rjT6" target="_blank" style="color: white;"><h4><span class="iconify me-1" data-icon="fa6-solid:location-dot" data-width="20" data-height="20"></span>Location:</h4>
+                <p>Griya Bhayangkara Masangan Kulon, Sidoarjo</p></a>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4><span class="iconify me-1" data-icon="ic:round-email" data-width="20" data-height="20"></span>Email:</h4>
+                <p>ramadhanz619@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4><span class="iconify me-1" data-icon="fluent:call-24-filled" data-width="20" data-height="20"></span>Call:</h4>
+                <p>+62 81332010412</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0 shadow p-3 mb-5 bg-body rounded">
+
+            <form action="" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="container centering">
+                <button class="btn btn-dark text-center mt-3" type="submit"><a href="#page-top"></a> Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </div>
+  <!-- footer -->
+  <footer class="container-fluid pt-4 pb-4" style="background: #212529;">
+    <div class="container">
+      <h4 class="fs-2 fw-semibold centering" style="color: WHITE;">CONNECT WITH ME</h4>
+      <div class="centering">
+        <a href="http://instagram.com" target="_blank"><span class="iconify" data-icon="fa-brands:instagram-square" style="color: white;" data-width="37" data-height="37"></span></a>
+        <a href="http://linkedin.com" target="_blank"><span class="iconify" data-icon="fa-brands:linkedin" style="color: white;" data-width="37" data-height="37 "></span></a>
+        <a href="http://twitter.com" target="_blank"><span class="iconify" data-icon="fa-brands:twitter-square" style="color: white;" data-width="37" data-height="37"></span></a>
+        <a href="http://wa.me/6281332010412" target="_blank"><span class="iconify" data-icon="fa-brands:whatsapp-square" style="color: white;" data-width="37" data-height="37"></span></a>
+      </div>
+      <div class="container centering mt-2">
+        <button class="btn btn-light"><a href="#" style="color: black;">Back to Top</a></button>
+      </div>
+  </footer>
+</body>
+</html>
